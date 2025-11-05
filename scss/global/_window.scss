@@ -1,7 +1,9 @@
 body,
 button,
 #tooltip {
-  font-family: $font-primary;
+  &:not(.fa-solid, .fas) {
+    font-family: $font-primary;
+  }
 }
 
 .window-app {
