@@ -37,7 +37,7 @@ async function _handleRender(html) {
 export async function editMembersRoles(socialClub) {
   const membersRoles = await prepareMembersRolesData(socialClub);
 
-  const content = await renderTemplate(memberRolesDialogTemplate, {
+  const content = await foundry.applications.handlebars.renderTemplate(memberRolesDialogTemplate, {
     membersRoles: membersRoles
   });
 

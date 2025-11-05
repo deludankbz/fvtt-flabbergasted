@@ -51,7 +51,7 @@ export default class FlabbergastedClubUpgrade extends FlabbergastedItemBase {
 
     await item.update({ "system.used": true });
 
-    const content = await renderTemplate(clubUpgradeTemplate, {
+    const content = await foundry.applications.handlebars.renderTemplate(clubUpgradeTemplate, {
       clubUpgrade: item
     });
 

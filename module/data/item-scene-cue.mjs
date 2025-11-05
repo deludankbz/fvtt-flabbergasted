@@ -73,7 +73,7 @@ export default class FlabbergastedSceneCue extends FlabbergastedItemBase {
       socialStandingText = game.i18n.localize(`FLABBERGASTED.Item.SceneCue.SocialStandingChange.${socialStandingText}`);
     }
 
-    const content = await renderTemplate(sceneCueTemplate, {
+    const content = await foundry.applications.handlebars.renderTemplate(sceneCueTemplate, {
       sceneCue: item,
       newSocialStanding: Math.abs(newSocialStanding),
       socialStandingText

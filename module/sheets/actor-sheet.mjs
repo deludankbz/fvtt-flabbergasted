@@ -412,7 +412,7 @@ export class FlabbergastedActorSheet extends ActorSheet {
         break;
     }
 
-    const chatContent = await renderTemplate(rollTemplate, {
+    const chatContent = await foundry.applications.handlebars.renderTemplate(rollTemplate, {
       flavor: content,
       formula: roll.formula,
       tooltip: await roll.getTooltip(),
@@ -504,7 +504,7 @@ export class FlabbergastedActorSheet extends ActorSheet {
     const speaker = ChatMessage.getSpeaker({ actor: this.actor });
     const rollMode = game.settings.get('core', 'rollMode');
 
-    const content = await renderTemplate(clubUpgradeTemplate, {
+    const content = await foundry.applications.handlebars.renderTemplate(clubUpgradeTemplate, {
       clubUpgrade: itemData,
       acquired: true
     });
