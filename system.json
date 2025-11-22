@@ -1,7 +1,7 @@
 {
   "id": "flabbergasted",
   "title": "Flabbergasted",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "The Flabbergasted system for FoundryVTT!",
   "authors": [
     {
@@ -23,8 +23,8 @@
     }
   ],
   "compatibility": {
-    "minimum": "11",
-    "verified": "12"
+    "minimum": "13",
+    "verified": "13"
   },
   "esmodules": ["module/flabbergasted.mjs"],
   "styles": ["css/flabbergasted.css"],
