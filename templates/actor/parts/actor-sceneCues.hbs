@@ -44,6 +44,8 @@
     {{#if item.system.socialStanding}}<div style="float:right; font-size: 60%; margin-top:10px">[
       <strong>+{{localize (concat "FLABBERGASTED.Item.SceneCue.SocialStandingChange." item.system.socialStanding)}}</strong> ]
     </div>{{/if}}
+    {{#if item.system.influence}}<div style="float:right; font-size: 60%; margin-top:10px;">[ <strong>{{localize "FLABBERGASTED.Item.SceneCue.RollInfluence"}}</strong> ]</div>
+    {{/if}}
   </h2>
   {{{item.system.description}}}
   {{#if item.system.hasExtraItems}}
