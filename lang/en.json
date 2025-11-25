@@ -22,6 +22,7 @@
         "MaxUsage": "Max Usages",
         "AvailableUsage": "Available Usages",
         "Used": "Used",
+        "RollInfluence": "Roll for Influence",
         "HasExtraItem": "Has Extra Items",
         "Item": "Item {item}"
       }
